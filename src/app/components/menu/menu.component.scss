@@ -1,0 +1,25 @@
+.menu {
+  height: 100vh;
+  h3 {
+    padding-top: 2em;
+  }
+  .menu-item {
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    background: url('../../../assets/img/menu/appetizer.jpg');
+    height: 100vh;
+    &:nth-of-type(3n) {
+      background: url('../../../assets/img/menu/steak.jpg');
+    }
+    &:nth-of-type(4n) {
+      background: url('../../../assets/img/menu/fish.jpg');
+    }
+    &:nth-of-type(5n) {
+      background: url('../../../assets/img/menu/vegan.jpg');
+    }
+    &:nth-of-type(6n) {
+      background: url('../../../assets/img/menu/dessert.jpg');
+    }
+  }
+}
