@@ -1,0 +1,29 @@
+
+.input-field {
+  input:focus {
+    border-bottom: 1px solid #ff9100 !important;
+    box-shadow: 0 1px 0 0 #ff9100;
+  }
+  .materialize-textarea:focus {
+    border-bottom: 1px solid #ff9100 !important;
+    box-shadow: 0 1px 0 0 #ff9100;
+  }
+}
+.btn {
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.location {
+    position: relative;
+    padding-bottom: 25%; 
+    padding-top: 25px;
+    height: 0;
+ iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}

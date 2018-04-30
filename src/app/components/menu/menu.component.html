@@ -1,34 +1,41 @@
-<div class="menu">
+<div class="menu" id="menu" materialize="scrollSpy" [materializeParams]="[{scrollOffset:0}]">
   <div class="container center">
     <h3>Our</h3>
     <h2 class="orange-text accent-3">Menu</h2>
     <hr>
   </div>
-  <div class="row center-align">
+  <div class="row">
+      <div class="container center">
     <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s2  offset-s1">
-          <a class="active" href="#entree">Entrée</a>
-        </li>
-        <li class="tab col s2">
-          <a href="#meat">Meat</a>
-        </li>
-        <li class="tab col s2">
-          <a href="#fish">Fish</a>
-        </li>
-        <li class="tab col s2">
-          <a href="#vegan">Vegan</a>
-        </li>
-        <li class="tab col s2">
-          <a href="#dessert">Dessert</a>
-        </li>
-      </ul>
+        <ul class="tabs">
+          <li class="tab col s3">
+            <a href="#meat">Meat</a>
+          </li>
+          <li class="tab col s3">
+            <a href="#fish">Fish</a>
+          </li>
+          <li class="tab col s3">
+            <a href="#vegan">Vegan</a>
+          </li>
+          <li class="tab col s3">
+            <a href="#dessert">Dessert</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
-    <div id="entree" class="col s12 menu-item">entree</div>
-    <div id="meat" class="col s12 menu-item">meat</div>
-    <div id="fish" class="col s12 menu-item">fish</div>
-    <div id="vegan" class="col s12 menu-item">vegan</div>
-    <div id="dessert" class="col s12 menu-item">dessert</div>
+    <div id="meat" class="col s12 menu-item">
+      <app-meat></app-meat>
+    </div>
+    <div id="fish" class="col s12 menu-item">
+      <app-fish></app-fish>
+    </div>
+    <div id="vegan" class="col s12 menu-item">
+      <app-vegan></app-vegan>
+    </div>
+    <div id="dessert" class="col s12 menu-item">
+      <app-dessert></app-dessert>
+    </div>
   </div>
 
 </div>

@@ -1,0 +1,25 @@
+.slider {
+  height: 100%;
+  position: relative;
+  top: 0;
+  .slides {
+    background-color: white;
+    height: auto !important;
+    .card {
+          height: 20em;
+          
+          .card-content {
+              margin:2em 4em;
+
+          }
+        }
+  }
+}
+
+.slider,
+.slides::before,
+.slides::after {
+  content: "";
+  display: table;
+  clear: both;
+}
